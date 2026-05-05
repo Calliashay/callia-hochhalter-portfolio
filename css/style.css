@@ -1,21 +1,19 @@
-/* 1. Global Spacing & Layout */
 body {
     margin: 0;
-    padding: 2.5rem 8%; /* Slightly reduced top padding */
+    padding: 2.5rem 8%;
     line-height: 1.6;
     background-color: #fcfcfc;
     font-family: 'Inter', sans-serif;
     color: #333;
 }
 
-/* 2. Consistent Hero Header - Enhanced Typography */
 header {
-    margin-bottom: 2.5rem; /* Slightly more room below the larger banner */
+    margin-bottom: 2.5rem;
 }
 
 .hero-banner {
     background-color: #f8f9fa; 
-    padding: 4rem 8%; /* Increased padding for a more substantial "filled" feel */
+    padding: 4rem 8%;
     margin: -2.5rem -9% 2rem -9%; 
     border-bottom: 1px solid #eee;
     display: flex;
@@ -23,14 +21,14 @@ header {
 }
 
 .hero-content {
-    border-left: 4px solid #333; /* Slightly thicker line to match bigger text */
+    border-left: 4px solid #333;
     padding-left: 2rem;
 }
 
 .hero-name {
     display: block;
-    font-size: 2.2rem; /* Increased size for a stronger brand presence */
-    font-weight: 500; /* Medium weight for clarity */
+    font-size: 2.2rem;
+    font-weight: 500;
     letter-spacing: 0.5px;
     color: #1a1a1a;
     line-height: 1.1;
@@ -39,16 +37,16 @@ header {
 
 .hero-subtitle {
     display: block;
-    font-size: 1rem; /* Scaled up for better readability */
+    font-size: 1rem;
     text-transform: uppercase;
-    letter-spacing: 2px; /* Increased tracking for an upscale look */
+    letter-spacing: 2px;
     color: #666;
 }
 
-/* 3. Navigation Bar - Bigger and More Noticeable */
+
 nav ul {
     display: flex;
-    gap: 2.5rem; /* Increased spacing between links */
+    gap: 2.5rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -57,29 +55,29 @@ nav ul {
 nav a {
     text-decoration: none;
     color: #555;
-    font-size: 1.1rem; /* Larger font size for core navigation */
-    font-weight: 600; /* Semi-bold weight to make links stand out */
-    text-transform: uppercase; /* Optional: adds a more structured, intentional feel */
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 1px;
     transition: all 0.2s ease;
 }
 
 nav a:hover, nav a.active {
     color: #000;
-    border-bottom: 2px solid #333; /* Subtle underline to emphasize current/hovered page */
+    border-bottom: 2px solid #333;
     padding-bottom: 4px;
 }
 
 .site-logo {
-    font-weight: normal; /* Ensuring name is not bold per your preference */
+    font-weight: normal;
     font-size: 1.1rem;
-    margin-bottom: 0.5rem; /* Tighter gap between name and nav */
+    margin-bottom: 0.5rem;
     color: #333;
 }
 
 nav ul {
     display: flex;
-    gap: 1.5rem; /* Reduced from 2.5rem for a more compact menu */
+    gap: 1.5rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -91,21 +89,20 @@ nav a {
     font-size: 0.9rem;
 }
 
-/* 2. Professional Filter Chips */
 #projects h1 {
-    margin-top: 0; /* Removes default top spacing to sit closer to nav */
-    margin-bottom: 1.25rem; /* Tighter gap before chips */
+    margin-top: 0;
+    margin-bottom: 1.25rem;
     font-size: 1.8rem;
 }
 
 .filter-group {
-    margin-bottom: 2rem; /* Reduced from 3rem for a tighter feel */
+    margin-bottom: 2rem;
     display: flex;
     gap: 0.6rem;
 }
 
 .chip {
-    padding: 0.4rem 1.2rem; /* Slightly more compact chips */
+    padding: 0.4rem 1.2rem;
     border: 1px solid #ddd;
     background: white;
     border-radius: 25px;
@@ -113,7 +110,6 @@ nav a {
     transition: all 0.2s ease;
 }
 
-/* Professor's requested hover state */
 .chip:hover {
     background-color: #f0f0f0;
     border-color: #bbb;
@@ -125,11 +121,11 @@ nav a {
     border-color: #333;
 }
 
-/* 3. The Minimalist Grid */
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2rem; /* Reduced from 3rem for tighter card grouping */
+    gap: 2rem;
     list-style: none;
     padding: 0;
 }
@@ -142,15 +138,13 @@ nav a {
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* This transition makes the hover effect smooth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-/* This is the box hovering effect you're looking for */
 .project-card:hover {
-    transform: translateY(-5px); /* Lifts the card slightly */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* Adds a soft, minimalist shadow */
-    border-color: #ddd; /* Slightly darkens the border to define the card */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-color: #ddd;
 }
 
 .card-category {
@@ -166,10 +160,9 @@ nav a {
     font-size: 1.3rem;
 }
 
-/* 4. The Subtle Link */
 .case-study-btn {
     margin-top: auto;
-    padding-top: 1.5rem; /* Reduced from 2rem */
+    padding-top: 1.5rem;
     color: #007bff;
     text-decoration: none;
     font-weight: 600;
