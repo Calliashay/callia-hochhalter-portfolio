@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritime AI Integration</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #004b8d;
+            --secondary-text: #666666;
+            --badge-bg: #e1e8ed;
+            --badge-text: #004b8d;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: -1px;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .repo-link {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .repo-link:hover { text-decoration: underline; }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 0 40px 0;
+            padding: 30px;
+            background: #f4f7f9;
+        }
+
+        .meta-item h3 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .tech-stack-list {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tech-badge {
+            background: var(--badge-bg);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--badge-text);
+        }
+
+        .pipeline-step {
+            background: #f0f4f8;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border-left: 3px solid var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="projects.html" style="text-decoration: none; color: var(--secondary-text); font-size: 0.9rem;">← Back to Projects</a>
+    </nav>
+
+    <header>
+        <p class="tagline">Gen AI Data Processing & Analytics</p>
+        <h1>AIS Maritime AI Integration</h1>
+        <a href="https://github.com/MortonAnalyticsTeam/BMIS476MortonAnalytics" class="repo-link" target="_blank">
+            View Project Repository on GitHub →
+        </a>
+    </header>
+
+    <div class="project-meta">
+        <div class="meta-item">
+            <h3>Stack</h3>
+            <ul class="tech-stack-list">
+                <li class="tech-badge">Python</li>
+                <li class="tech-badge">Claude AI</li>
+                <li class="tech-badge">Excel</li>
+                <li class="tech-badge">GitHub</li>
+                <li class="tech-badge">VS Code</li>
+            </ul>
+        </div>
+        <div class="meta-item">
+            <h3>Role</h3>
+            <p>Data Analytics & Pipeline Architecture</p>
+        </div>
+        <div class="meta-item">
+            <h3>Goal</h3>
+            <p>Automate event detection in raw vessel tracking data.</p>
+        </div>
+    </div>
+
+    <section id="overview">
+        <h2>Project Impetus</h2>
+        <p>Current maritime tracking relies on heuristic models prone to manual error. This project explores the feasibility of integrating Generative AI to produce a more efficient, scalable, and accurate model for detecting significant maritime events.</p>
+    </section>
+
+    <section id="pipeline">
+        <h2>The Technical Pipeline</h2>
+        <p>The system transforms raw GPS data into actionable insights through a multi-stage process:</p>
+        
+        <div class="pipeline-step">
+            <strong>1. Data Ingestion & Resolution:</strong> Handles CSV, JSON, and NMEA radio messages, mapping varying column names to internal fields.
+        </div>
+        <div class="pipeline-step">
+            <strong>2. Event Detection Engine:</strong> Uses vectorized operations to detect speed-based events and course-based deviations.
+        </div>
+        <div class="pipeline-step">
+            <strong>3. AI Summarization:</strong> Integrated Claude AI to generate natural language summaries of complex movements for non-technical analysts.
+        </div>
+        <div class="pipeline-step">
+            <strong>4. Confidence Scoring:</strong> Quantitative reliability system achieving an average confidence score of 0.84.
+        </div>
+    </section>
+
+    <section id="outcomes">
+        <h2>Key Outcomes</h2>
+        <ul>
+            <li><strong>Labeling Accuracy:</strong> 100% accuracy in classifying Route Deviations during testing.</li>
+            <li><strong>Efficiency:</strong> Optimized memory usage by 40% during large-scale batch processing.</li>
+            <li><strong>Actionable Insights:</strong> Transformed complex GPS data into high-fidelity dashboard.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; color: #999; font-size: 0.8rem;">
+            &copy; 2026 | MIS Professional Portfolio
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

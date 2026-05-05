@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missoula Senior Center Redesign</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #004b8d;
+            --secondary-text: #666666;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: -1px;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .site-link {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .site-link:hover { text-decoration: underline; }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 0 40px 0;
+            padding: 30px;
+            background: #f9f9f9;
+        }
+
+        .meta-item h3 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        section { margin-bottom: 50px; }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .decision-card {
+            background: #fffcfc;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border: 1px solid #f2e6e6;
+        }
+
+        .tech-badge {
+            background: #ededed;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #444;
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .role-title {
+            font-weight: 600;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="projects.html" style="text-decoration: none; color: var(--secondary-text); font-size: 0.9rem;">← Back to Projects</a>
+    </nav>
+
+    <header>
+        <p class="tagline">Systems Design & UI/UX Redesign</p>
+        <h1>Missoula Senior Center Redesign</h1>
+        <a href="https://www.themissoulaseniorcenter.org/" class="site-link" target="_blank">
+            Visit the Missoula Senior Center Site →
+        </a>
+    </header>
+
+    <div class="project-meta">
+        <div class="meta-item">
+            <h3>Platform</h3>
+            <span class="tech-badge">Wix</span>
+            <span class="tech-badge">Accessibility Tools</span>
+        </div>
+        <div class="meta-item">
+            <h3>Role</h3>
+            <p class="role-title">Systems Designer</p>
+            <p style="font-size: 0.9rem; margin-top: 5px;">Defining architecture, modules, and interfaces.</p>
+        </div>
+        <div class="meta-item">
+            <h3>Focus</h3>
+            <p>ADA Compliance & User Flow Simplification.</p>
+        </div>
+    </div>
+
+    <section id="design-process">
+        <h2>Design & Discovery</h2>
+        <p>The redesign began with a deep dive into user needs, specifically focusing on the frustrations of the site operator and the unique requirements of a senior demographic.</p>
+        
+        <div class="decision-card">
+            <strong>Platform Feasibility:</strong> Built a matrix comparing Wix, WordPress, and Squarespace across operational, economic, and technical criteria. Wix was selected for its superior drag-and-drop interface and long-term ease of maintenance.
+        </div>
+        <div class="decision-card">
+            <strong>Inclusive UI/UX:</strong> Prioritized ADA compliance as a central design pillar, specifically optimizing font sizes, color contrast, and simplified navigation for seniors.
+        </div>
+    </section>
+
+    <section id="implementation">
+        <h2>Agile Implementation</h2>
+        <p>To ensure the best outcome for the client, the project management style shifted from a rigid Waterfall methodology to an <strong>Agile approach</strong>.</p>
+        <ul>
+            <li><strong>Iterative Feedback:</strong> Successive iterations focused on the evolving needs of the client rather than strict process control.</li>
+            <li><strong>Refined Layouts:</strong> This flexibility allowed for collaborative refinements to the layout that traditional methods might have overlooked.</li>
+            <li><strong>Key Deliverables:</strong> Produced a comprehensive suite of documentation including a Feasibility Study, Data Collection Plan, and full Design Document.</li>
+        </ul>
+    </section>
+
+    <section id="outcomes">
+        <h2>Recommendations & Future Growth</h2>
+        <p>Post-implementation recommendations focused on digitizing the center's operational workflows:</p>
+        <ul>
+            <li>Phasing MSC membership and volunteer applications into digital submission forms.</li>
+            <li>Enhanced integration with Missoula Aging Services.</li>
+            <li>Strategic updates to the Thrift Store presence to showcase current inventory.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; color: #999; font-size: 0.8rem;">
+            &copy; 2026 | Callia S. Hochhalter Portfolio
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

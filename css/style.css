@@ -8,8 +8,66 @@ body {
     color: #333;
 }
 
+/* 2. Consistent Hero Header - Enhanced Typography */
 header {
-    margin-bottom: 2rem; /* Significantly reduced from 5rem to pull content up */
+    margin-bottom: 2.5rem; /* Slightly more room below the larger banner */
+}
+
+.hero-banner {
+    background-color: #f8f9fa; 
+    padding: 4rem 8%; /* Increased padding for a more substantial "filled" feel */
+    margin: -2.5rem -9% 2rem -9%; 
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero-content {
+    border-left: 4px solid #333; /* Slightly thicker line to match bigger text */
+    padding-left: 2rem;
+}
+
+.hero-name {
+    display: block;
+    font-size: 2.2rem; /* Increased size for a stronger brand presence */
+    font-weight: 500; /* Medium weight for clarity */
+    letter-spacing: 0.5px;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin-bottom: 0.6rem;
+}
+
+.hero-subtitle {
+    display: block;
+    font-size: 1rem; /* Scaled up for better readability */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Increased tracking for an upscale look */
+    color: #666;
+}
+
+/* 3. Navigation Bar - Bigger and More Noticeable */
+nav ul {
+    display: flex;
+    gap: 2.5rem; /* Increased spacing between links */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem; /* Larger font size for core navigation */
+    font-weight: 600; /* Semi-bold weight to make links stand out */
+    text-transform: uppercase; /* Optional: adds a more structured, intentional feel */
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #000;
+    border-bottom: 2px solid #333; /* Subtle underline to emphasize current/hovered page */
+    padding-bottom: 4px;
 }
 
 .site-logo {

@@ -4,37 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Callia S. Hochhalter Portfolio</title>
-    <!-- Path updated to css/style.css to match your folder -->
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --accent-color: #004b8d;
+            --secondary-text: #666666;
+        }
+
+        .main-content-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-top: 40px;
+        }
+
+        .about-column {
+            flex: 2;
+        }
+
+        .about-column h2 {
+            margin-top: 0;
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        .contact-box {
+            flex: 1;
+            background: #f4f7f9;
+            padding: 30px;
+            border-radius: 4px;
+            min-width: 280px;
+            margin-top: 10px;
+        }
+
+        .contact-box h3 {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+        }
+
+        .contact-detail {
+            font-size: 0.9rem; 
+            margin-bottom: 12px;
+            color: var(--secondary-text);
+        }
+
+        .contact-detail strong {
+            color: #333;
+        }
+
+        .social-link {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid var(--accent-color);
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--accent-color);
+            color: #fff;
+        }
+
+        @media (max-width: 850px) {
+            .main-content-wrapper { flex-direction: column; }
+            .contact-box { width: 100%; box-sizing: border-box; }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="site-logo">Callia S. Hochhalter</div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
+        <div class="hero-banner">
+            <div class="hero-content">
+                <span class="hero-name">Callia S. Hochhalter</span>
+                <span class="hero-subtitle">MIS & Marketing Analytics | Data-Driven Results</span>
+            </div>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <!-- Points directly to your PDF in the assets folder -->
+                    <li><a href="Callia_Hochhalter_Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Callia S. Hochhalter</h1>
-            <p class="tagline">MIS Major | Marketing Analytics & Project Management</p>
-            <p>Focusing on visual polish and data-driven systems to bridge the gap between technical complexity and business results.</p>
-            <a href="projects.html" class="cta-button">View My Work</a>
-        </section>
+    <main class="container">
+        <div class="main-content-wrapper">
+            <!-- Left Column: About Me -->
+            <section class="about-column">
+                <h2>About Me</h2>
+                <p>
+                    I am a <strong>University of Montana Alum</strong> with a B.S. in Business Administration, majoring in <strong>Management Information Systems</strong> with a <strong>Certificate in Big Data</strong>. I graduated <strong>Cum Laude</strong> with a <strong>3.59 institutional GPA</strong> in Spring 2026.
+                </p>
+                <p>
+                    My academic journey was defined by a commitment to operational excellence; I successfully balanced a workload of <strong>30–40 hours per week</strong> alongside rigorous coursework and extracurricular activities. This experience honed my time management and organizational skills, allowing me to deliver high-quality results under pressure.
+                </p>
+                <p>
+                    Through specialized coursework in <strong>Statistics, Data Analytics, and Database Management</strong>, I have developed a strong foundation in interpreting diverse datasets to drive business strategy. I am passionate about seizing growth opportunities and leveraging my analytical skills to contribute to marketing, operations, and management initiatives.
+                </p>
+            </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Currently in my final semester as an MIS student with a 3.59 institutional GPA[cite: 1, 2]. I combine extensive Python experience with a growing mastery of JavaScript to build functional, accessible tools[cite: 4, 5].</p>
-        </section>
+            <!-- Right Column: Connect Box -->
+            <aside class="contact-box">
+                <h3>Connect</h3>
+                <div class="contact-detail"><strong>Location:</strong> Bozeman, MT</div>
+                <div class="contact-detail"><strong>Focus:</strong> Analytics & Project Management</div>
+                <div class="contact-detail"><strong>Email:</strong> calliashay.h@gmail.com</div>
+                
+                <a href="https://www.linkedin.com/in/callia-hochhalter-770ba022a/" class="social-link" target="_blank">
+                    LinkedIn Profile →
+                </a>
+            </aside>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 Your Name | Built for BMIS 476/478[cite: 20]</p>
+        <hr>
+        <p style="text-align: center; color: #999; font-size: 0.8rem;">
+            &copy; 2026 | Callia S. Hochhalter Portfolio
+        </p>
     </footer>
 </body>
 </html>

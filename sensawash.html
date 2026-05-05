@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SensaWash Study</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #004b8d;
+            --secondary-text: #666666;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: -1px;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 0 40px 0;
+            padding: 30px;
+            background: #f4f7f9;
+        }
+
+        .meta-item h3 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        section { margin-bottom: 50px; }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .insight-box {
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .tech-badge {
+            background: #e1e8ed;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            display: inline-block;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="projects.html" style="text-decoration: none; color: var(--secondary-text); font-size: 0.9rem;">← Back to Projects</a>
+    </nav>
+
+    <header>
+        <p class="tagline">Efficiency Audit & Labor Analytics</p>
+        <h1>SensaWash Efficiency Study</h1>
+    </header>
+
+    <div class="project-meta">
+        <div class="meta-item">
+            <h3>Stack</h3>
+            <span class="tech-badge">RStudio</span>
+            <span class="tech-badge">Excel</span>
+        </div>
+        <div class="meta-item">
+            <h3>Scale</h3>
+            <p>Gathered and tracked 300+ data points to evaluate system ROI.</p>
+        </div>
+        <div class="meta-item">
+            <h3>Company</h3>
+            <p>Enterprise Mobility (Internship Project)</p>
+        </div>
+    </div>
+
+    <section id="executive-summary">
+        <h2>Project Overview</h2>
+        <p>This study was conducted during my internship at Enterprise Mobility to determine the ROI of investing in automatic car wash systems for busy locations. It served as a foundational experience in gathering raw field data, managing a dataset of 300+ points in Excel, and running statistical tests in RStudio to present findings to corporate stakeholders.</p>
+    </section>
+
+    <section id="analysis">
+        <h2>Technical Methodology</h2>
+        <div class="insight-box">
+            <strong>Data Stewardship:</strong> Utilized Excel to maintain a clean, organized record of over 300 individual data points, ensuring integrity throughout the collection phase.
+        </div>
+        <div class="insight-box">
+            <strong>Statistical Rigor:</strong> Leveraged RStudio to perform the final analysis, looking for statistical significance between manual labor and automated system performance.
+        </div>
+        <div class="insight-box">
+            <strong>Predictable Performance:</strong> The study confirmed that the SensaWash system provided a highly predictable outcome, cleaning vehicles in a consistent 4-minute window.
+        </div>
+    </section>
+
+    <section id="reflection">
+        <h2>Critical Reflection</h2>
+        <p>A major takeaway from this project was the importance of isolating variables in data collection. While the initial results showed parity between systems, a retrospective audit revealed a need for a tighter focus on exterior-only cleaning times to eliminate the noise of interior detailing data.</p>
+        <ul>
+            <li><strong>Methodology:</strong> Improved my ability to define KPIs that align strictly with stakeholder objectives.</li>
+            <li><strong>Growth:</strong> This project shaped my current analytical standard, emphasizing the need for 100% confidence in the data stack before moving to the recommendation phase.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; color: #999; font-size: 0.8rem;">
+            &copy; 2026 | Callia Hochhalter Portfolio
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

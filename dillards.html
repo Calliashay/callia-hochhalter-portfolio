@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dillard's KPI Data Audit</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #004b8d;
+            --secondary-text: #666666;
+            --badge-bg: #e1e8ed;
+            --badge-text: #004b8d;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: -1px;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .repo-link {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .repo-link:hover { text-decoration: underline; }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 0 40px 0;
+            padding: 30px;
+            background: #f4f7f9;
+        }
+
+        .meta-item h3 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        .meta-item p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .recommendation-callout {
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 4px;
+            margin-top: 15px;
+            font-size: 0.95rem;
+        }
+
+        .tech-stack-list {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tech-badge {
+            background: var(--badge-bg);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--badge-text);
+        }
+
+        .insight-tag {
+            display: inline-block;
+            background: #e1e8ed;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            margin-right: 5px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="projects.html" style="text-decoration: none; color: var(--secondary-text); font-size: 0.9rem;">← Back to Projects</a>
+    </nav>
+
+    <header>
+        <p class="tagline">Marketing Analytics & Data Audit</p>
+        <h1>Dillard's KPI Data Audit</h1>
+        <!-- Placeholder for Github if applicable, matching the Maritime style -->
+        <a href="#" class="repo-link">View Analysis Documentation →</a>
+    </header>
+
+    <div class="project-meta">
+        <div class="meta-item">
+            <h3>Key Tools</h3>
+            <ul class="tech-stack-list">
+                <li class="tech-badge">Python</li>
+                <li class="tech-badge">PowerBI</li>
+                <li class="tech-badge">Excel</li>
+            </ul>
+        </div>
+        <div class="meta-item">
+            <h3>Timeline</h3>
+            <p>Spring 2026</p>
+        </div>
+        <div class="meta-item">
+            <h3>Project Focus</h3>
+            <p>Operational Efficiency & Risk Management</p>
+        </div>
+    </div>
+
+    <section id="overview">
+        <h2>Project Overview</h2>
+        <p>This project involved a comprehensive audit of regional retail transaction data to improve profitability and identify operational risks. The analysis focused specifically on <strong>Store 917 in Casa Grande, Arizona</strong>, selected for its unique performance metrics relative to state-wide volume averages.</p>
+    </section>
+
+    <section id="methodology">
+        <h2>Technical Approach</h2>
+        <p>The audit was executed through a multi-stage data pipeline to ensure accuracy and actionable results:</p>
+        <ul>
+            <li><strong>Data Extraction & Cleaning:</strong> Used Python to process raw transaction logs, handling over 122,000 individual records to normalize sales data across 1,114 days of history.</li>
+            <li><strong>KPI Benchmarking:</strong> Established performance baselines for net sales and transaction volume to compare Store 917 against regional averages.</li>
+            <li><strong>Trend Analysis:</strong> Leveraged PowerBI to identify seasonal spikes in high-value categories, such as designer handbags and beauty products.</li>
+            <li><strong>Risk Identification:</strong> Developed custom scripts to flag statistical outliers in return behavior, isolating potential fraud and systemic POS errors.</li>
+        </ul>
+    </section>
+
+    <section id="findings">
+        <h2>Core Findings & Strategic Recommendations</h2>
+        <ul>
+            <li>
+                <strong>Handbag Performance:</strong> Sales for Michael Kors and Brahmin peak significantly in December and May.
+                <div class="recommendation-callout">
+                    <span class="insight-tag">INVENTORY</span>
+                    <strong>Action:</strong> Prioritize stock of Black, Brown, and Vanilla colorways during peak windows to capture the highest brand-specific demand.
+                </div>
+            </li>
+            <li>
+                <strong>Gift Card Utility:</strong> Gift card transactions correlate with a higher overall "basket size" compared to standard payment methods.
+                <div class="recommendation-callout">
+                    <span class="insight-tag">MARKETING</span>
+                    <strong>Action:</strong> Launch targeted "Spend $80, Get $100" promotions in December to drive volume in premium beauty categories.
+                </div>
+            </li>
+            <li>
+                <strong>Inventory Calibration:</strong> Home and Decor categories represent only 11.55% of sales but drive 33.54% of store discounts.
+                <div class="recommendation-callout">
+                    <span class="insight-tag">PROFITABILITY</span>
+                    <strong>Action:</strong> Phase out underperforming cutlery lines to protect department margins from excessive discounting.
+                </div>
+            </li>
+            <li>
+                <strong>Fraud Mitigation:</strong> Flagged a specific outlier returning 123% of their total purchase value.
+                <div class="recommendation-callout">
+                    <span class="insight-tag">RISK CONTROL</span>
+                    <strong>Action:</strong> Implement manual audit flags for any customer account exceeding a 40% return-to-purchase ratio.
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; color: #999; font-size: 0.8rem;">
+            &copy; 2026 | Callia S. Hochhalter Portfolio
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweepSlot</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #004b8d;
+            --secondary-text: #666666;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: -1px;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .repo-link {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .repo-link:hover { text-decoration: underline; }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 0 40px 0;
+            padding: 30px;
+            background: #f4f7f9;
+        }
+
+        .meta-item h3 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        section { margin-bottom: 50px; }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .logic-box {
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .tech-badge {
+            background: #e1e8ed;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            display: inline-block;
+            margin: 2px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th { background-color: #fafafa; color: var(--accent-color); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="projects.html" style="text-decoration: none; color: var(--secondary-text); font-size: 0.9rem;">← Back to Projects</a>
+    </nav>
+
+    <header>
+        <p class="tagline">Functional Software Development</p>
+        <h1>SweepSlot: Solo Cleaner Scheduling</h1>
+        <a href="https://github.com/Calliashay/SweepSlot" class="repo-link" target="_blank">
+            View Python Repository on GitHub →
+        </a>
+    </header>
+
+    <div class="project-meta">
+        <div class="meta-item">
+            <h3>Stack</h3>
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Ollama</span>
+            <span class="tech-badge">Visual Studio Code</span>
+            <span class="tech-badge">GitHub</span>
+        </div>
+        <div class="meta-item">
+            <h3>Logic Style</h3>
+            <p>Foundational Python (loops, lists, conditionals) applied to real-world business processes.</p>
+        </div>
+        <div class="meta-item">
+            <h3>Key Feature</h3>
+            <p><strong>SweepSage:</strong> Integrated GenAI helper for natural language scheduling inquiries.</p>
+        </div>
+    </div>
+
+    <section id="executive-summary">
+        <h2>Executive Summary</h2>
+        <p>SweepSlot is a text-based scheduling application designed to help small cleaning businesses organize daily operations. Built entirely in Python, it allows users to define services, set hourly availability, and book clients without the risk of double-bookings or time overlaps.</p>
+    </section>
+
+    <section id="technical-logic">
+        <h2>Technical Architecture</h2>
+        <p>This project demonstrates how basic programming concepts can simplify business workflows without requiring advanced technical skills.</p>
+        
+        <div class="logic-box">
+            <strong>Conflict Resolution:</strong> Utilizes custom <code>bookingOverlaps()</code> and <code>insideAnyAvailability()</code> functions to ensure appointments fit within defined windows and don't conflict with existing jobs.
+        </div>
+        <div class="logic-box">
+            <strong>Session Persistence:</strong> Includes <code>exportAllData</code> and <code>importAllData</code> functionality, enabling users to save progress to a text file and reload it for future sessions.
+        </div>
+    </section>
+
+    <section id="functionality">
+        <h2>Key Functions</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Function</th>
+                    <th>Purpose</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>bookClient</code></td>
+                    <td>Validates times, checks availability, and computes final price based on duration.</td>
+                </tr>
+                <tr>
+                    <td><code>toMinutes</code></td>
+                    <td>Converts "HH:MM" text into total minutes from midnight using manual loops and arithmetic.</td>
+                </tr>
+                <tr>
+                    <td><code>askSweepAI</code></td>
+                    <td>Sends current session data and user questions to a local model via the <code>buildSweepAIContext</code> tool.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="reflection">
+        <h2>Lessons Learned</h2>
+        <p>Developing SweepSlot highlighted the importance of organized data structures. By separating services, availability, and earnings into distinct lists, it became significantly easier to build robust helper functions. The addition of the GenAI "SweepSage" feature modernizes the tool while staying within the constraints of functional, beginner-level Python.</p>
+    </section>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; color: #999; font-size: 0.8rem;">
+            &copy; 2026 | Callia S. Hochhalter Portfolio
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

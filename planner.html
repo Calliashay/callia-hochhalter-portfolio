@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Digital Student Planner</title>
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --accent-color: #004b8d;
+            --secondary-text: #666666;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: -1px;
+            font-size: 2.5rem;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            color: var(--secondary-text);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .store-link {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .store-link:hover { text-decoration: underline; }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 0 0 40px 0;
+            padding: 30px;
+            background: #f4f7f9;
+        }
+
+        .meta-item h3 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        section { margin-bottom: 50px; }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+        }
+
+        .lesson-card {
+            background: #f0f4f8;
+            padding: 20px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .tech-badge {
+            background: #e1e8ed;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .stat-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 20px;
+            background: #fafafa;
+            border: 1px solid #eee;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <a href="projects.html" style="text-decoration: none; color: var(--secondary-text); font-size: 0.9rem;">← Back to Projects</a>
+    </nav>
+
+    <header>
+        <p class="tagline">User-Centered Design & Marketing Analytics</p>
+        <h1>Class & Shift: 2026 Digital Planner</h1>
+        <a href="https://calliashay.gumroad.com/l/dctszb" class="store-link" target="_blank">
+            View on Gumroad →
+        </a>
+    </header>
+
+    <div class="project-meta">
+        <div class="meta-item">
+            <h3>Tools</h3>
+            <span class="tech-badge">Canva</span>
+            <span class="tech-badge">Adobe Acrobat</span>
+            <span class="tech-badge">Gumroad</span>
+        </div>
+        <div class="meta-item">
+            <h3>Technical Pivot</h3>
+            <p>Trimming 120-page "bloat" to a sleek, manual 75-page hyperlinked system.</p>
+        </div>
+        <div class="meta-item">
+            <h3>Results</h3>
+            <p>12 Total Sales, with a 5x increase following the technical overhaul.</p>
+        </div>
+    </div>
+
+    <section id="recap">
+        <h2>Strategic Evolution</h2>
+        <p>This project was a bridge between design and marketing analytics. What began as a simple weekly layout evolved into a complex, fully hyperlinked product through 53 iterations and over 50 hours of manual labor.</p>
+        
+        <div class="stat-grid">
+            <div class="stat-box">
+                <span class="stat-number">2</span>
+                <span>Sales (Initial Layout)</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-number">10</span>
+                <span>Sales (Hyperlinked Version)</span>
+            </div>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--secondary-text); margin-top: 10px;">The data validated the decision to invest 40+ additional hours into the technical overhaul.</p>
+    </section>
+
+    <section id="marketing-strategy">
+        <h2>Marketing & Conversion Optimization</h2>
+        <ul>
+            <li><strong>Foundations & Trust:</strong> Created iPad mockups to establish the visual credibility required for stranger-market purchases.</li>
+            <li><strong>SEO Pivot:</strong> Swapped keyword-stuffed titles for a clean "2026 Hyperlinked Digital Planner," resulting in an organic sale within 48 hours.</li>
+            <li><strong>Price Strategy:</strong> Dropped pricing from $2.99 to $0.99 during finals season to remove final barriers to purchase.</li>
+        </ul>
+    </section>
+
+    <section id="lessons">
+        <h2>Lessons from the Trenches</h2>
+        <div class="lesson-card">
+            <strong>Research over Rework:</strong> Trusting AI advice for software limitations (Canva) led to significant technical debt; choosing the right "tech stack" is as critical as the data itself.
+        </div>
+        <div class="lesson-card">
+            <strong>The "Stranger" Market:</strong> Realized that marketing is a living response to human reaction; small changes in titles and hooks drive psychological engagement.
+        </div>
+        <div class="lesson-card">
+            <strong>Resilience:</strong> Balancing 30-40 work hours weekly with this project proved that professional-grade functionality is non-negotiable—"it almost works" isn't good enough.
+        </div>
+    </section>
+
+    <footer>
+        <hr>
+        <p style="text-align: center; color: #999; font-size: 0.8rem;">
+            &copy; 2026 | Callia S. Hochhalter Portfolio
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>

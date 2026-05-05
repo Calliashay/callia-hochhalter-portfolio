@@ -8,20 +8,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+<header>
+    <div class="hero-banner">
+        <div class="hero-content">
+            <span class="hero-name">Callia S. Hochhalter</span>
+            <span class="hero-subtitle">MIS & Marketing Analytics | Data-Driven Results</span>
+        </div>
+    </div>
         <nav>
-            <div class="site-logo">Callia S. Hochhalter</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="assets/resume.pdf" target="_blank">Resume</a></li>
+                <!-- Points directly to your PDF in the assets folder -->
+                <li><a href="Callia_Hochhalter_Resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
-    </header>
+</header>
 
+<main>
     <section id="projects">
-        <h2>Technical Projects</h2>
-
+        <h1>Technical Projects</h1>
+        
         <div class="filter-group">
             <button type="button" class="chip is-active" data-filter="all">All</button>
             <button type="button" class="chip" data-filter="analytics">Business Analytics</button>
@@ -29,75 +36,88 @@
             <button type="button" class="chip" data-filter="software">Software Development</button>
         </div>
 
+        <!-- The project-grid remains the same as our established structure -->
         <ul class="project-grid">
-            <li>
-                <article>
-                    <div class="project-card" data-category="analytics">
-                        <h3 class="card-title">Dillard's KPI Project</h3>
-                        <p class="card-category">Business Analytics</p>
-                        <p>Analyzed retail data to identify key performance indicators for operational decision-making.</p>
-                        <a href="case-studies/dillards.html" class="case-study-btn">View Case Study</a>
-                    </div>
-                </article>
-            </li>
-
-            <li>
-                <article>
-                    <div class="project-card" data-category="analytics">
-                        <h3 class="card-title">SensaWash Efficiency Study</h3>
-                        <p class="card-category">Business Analytics</p>
-                        <p>Quantified labor savings by comparing automated car wash systems against manual labor.</p>
-                        <a href="case-studies/sensawash.html" class="case-study-btn">View Case Study</a>
-                    </div>
-                </article>
-            </li>
-
-            <li>
-                <article>
-                    <div class="project-card" data-category="automation">
-                        <h3 class="card-title">Class & Shift - Digital Planner</h3>
-                        <p class="card-category">Process Automation</p>
-                        <p>A fully hyperlinked digital planner optimized for navigation in PDF annotation apps.</p>
-                        <a href="case-studies/planner.html" class="case-study-btn">View Case Study</a>
-                    </div>
-                </article>
-            </li>
-
-            <li>
-                <article>
-                    <div class="project-card" data-category="automation">
-                        <h3 class="card-title">AIS Maritime Intelligence</h3>
-                        <p class="card-category">Process Automation</p>
-                        <p>An AI system that automates the detection and labeling of significant maritime events.</p>
-                        <a href="case-studies/maritime-ai.html" class="case-study-btn">View Case Study</a>
-                    </div>
-                </article>
-            </li>
-
-            <li>
-                <article>
-                    <div class="project-card" data-category="software">
-                        <h3 class="card-title">Senior Center Web Redesign</h3>
-                        <p class="card-category">Software Development</p>
-                        <p>Modernized UI/UX with strict adherence to ADA accessibility standards.</p>
-                        <a href="case-studies/senior-center.html" class="case-study-btn">View Case Study</a>
-                    </div>
-                </article>
-            </li>
-
-            <li>
-                <article>
-                    <div class="project-card" data-category="software">
-                        <h3 class="card-title">SweepSlot Scheduling App</h3>
-                        <p class="card-category">Software Development</p>
-                        <p>A Python application built to help small cleaning businesses manage client bookings</p>
-                        <a href="case-studies/sweepslot.html" class="case-study-btn">View Case Study</a>
-                    </div>
-                </article>
-            </li>
+            <!-- Project Cards Here -->
         </ul>
     </section>
+</main>
+    <ul class="project-grid">
+        <li>
+            <article>
+                <div class="project-card" data-category="analytics">
+                    <h3 class="card-title">Dillard's KPI Project</h3>
+                    <p class="card-category">Business Analytics</p>
+                    <p>Analyzed retail data to identify key performance indicators for operational decision-making.</p>
+                    <a href="dillards.html" class="case-study-btn">View Case Study</a>
+                </div>
+            </article>
+        </li>
 
-    <script src="js/chip-filters.js"></script>
+        <li>
+            <article>
+                <div class="project-card" data-category="analytics">
+                    <h3 class="card-title">SensaWash Efficiency Study</h3>
+                    <p class="card-category">Business Analytics</p>
+                    <p>Quantified labor savings by comparing automated car wash systems against manual labor.</p>
+                    <a href="sensawash.html" class="case-study-btn">View Case Study</a>
+                </div>
+            </article>
+        </li>
+
+        <li>
+            <article>
+                <div class="project-card" data-category="automation">
+                    <h3 class="card-title">Class & Shift - Digital Planner</h3>
+                    <p class="card-category">Process Automation</p>
+                    <p>A fully hyperlinked digital planner optimized for navigation in PDF annotation apps.</p>
+                    <a href="planner.html" class="case-study-btn">View Case Study</a>
+                </div>
+            </article>
+        </li>
+
+        <li>
+            <article>
+                <div class="project-card" data-category="automation">
+                    <h3 class="card-title">AIS Maritime Intelligence</h3>
+                    <p class="card-category">Process Automation</p>
+                    <p>An AI system that automates the detection and labeling of significant maritime events.</p>
+                    <a href="maritime-ai.html" class="case-study-btn">View Case Study</a>
+                </div>
+            </article>
+        </li>
+
+        <li>
+            <article>
+                <div class="project-card" data-category="software">
+                    <h3 class="card-title">Senior Center Web Redesign</h3>
+                    <p class="card-category">Software Development</p>
+                    <p>Modernized UI/UX with strict adherence to ADA accessibility standards.</p>
+                    <a href="senior-center.html" class="case-study-btn">View Case Study</a>
+                </div>
+            </article>
+        </li>
+
+        <li>
+            <article>
+                <div class="project-card" data-category="software">
+                    <h3 class="card-title">SweepSlot Scheduling App</h3>
+                    <p class="card-category">Software Development</p>
+                    <p>A Python application built to help small cleaning businesses manage client bookings</p>
+                    <a href="sweepslot.html" class="case-study-btn">View Case Study</a>
+                </div>
+            </article>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <hr>
+    <p style="text-align: center; color: #999; font-size: 0.8rem;">
+        &copy; 2026 | Callia S. Hochhalter Portfolio
+    </p>
+</footer>
+
+<script src="js/chip-filters.js"></script>
 </body>
 </html>
